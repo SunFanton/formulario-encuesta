@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta nature-org</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo">
+  </head>
+  <body>
+
+    <div id="cabecera">
+      <img src="images/logo2" alt="Logo de nature.org">
+      <h1 id="title"><i>Caring our home</i></h1>
+      <p id="description">nature-org es una organización sin fines de lucro dedicada a la lucha por la preservación del medio ambiente y la reducción de los efectos del calentamiento global a causa de la contaminación sistemática del ser humano.
+      A través de este formulario de encuesta, ayúdanos con nuevas propuestas y sugerencias para mejorar nuestra labor diaria.</p>
+      <br>
+      <div><strong>Cuidar nuestro hogar es responsabilidad de todos.</strong></div>
+    </div>
+
+    <div id="formulario">
+      <h2>Formulario de encuesta</h2>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Nombre*</label>
+          <input 
+            type="text" 
+            id="name" 
+            placeholder="Juan Perez"  
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email*</label>
+          <input 
+            type="email" 
+            id="email" 
+            placeholder="example@example.com" 
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Edad</label>
+          <input 
+            type="number" 
+            id="number" 
+            min="18" 
+            max="70" 
+            placeholder="Introduce tu edad" 
+            pattern="[0-9]">
+        </div>
+
+        <div class="form-group">
+          <p>Selecciona tu región*</p>
+          <select id="dropdown" required>
+            <option value="africa">África</option>
+            <option value="north-america">América del Norte</option>
+            <option value="south-america">América del Sur</option>
+            <option value="europe">Europa</option>
+            <option value="asia">Asia</option>
+            <option value="oceania">Oceanía</option>
+          </select>
+        </div>
+
+        <div id="form-group">
+          <p>En base a tus conocimientos de los valores de nuestra organización, ¿formarías parte del equipo de nature-org?</p>
+          <label>
+          <input 
+            type="radio" 
+            id="work-with-us" 
+            name="work-with-us" 
+            value="definitely"
+            checked>
+            Definitivamente
+          </label>
+          <label>
+          <input 
+            type="radio" 
+            id="work-with-us" 
+            name="work-with-us" 
+            value="maybe">
+            Tal vez
+          </label>
+          <label>
+          <input 
+            type="radio" 
+            id="work-with-us" 
+            name="work-with-us" 
+            value="not-sure">
+            No lo sé
+          </label>
+          <label>
+            <input 
+            type="radio" 
+            id="work-with-us" 
+            name="work-with-us" 
+            value="no">
+            No
+          </label>
+        </div>
+
+        <div id="form-group">
+          <p>¿Respecto a cuál de nuestras áreas te interesaría sugerir cambios y/o mejoras? (Puedes elegir más de una opción)</p>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="public-awareness"
+            checked>
+            Campañas de concientización al público
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="dialog-politics">
+            Políticas de diálogo con gobiernos/empresas
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="water-contamination">
+            Medidas contra la contaminación acuífera
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="air-contamination">
+            Medidas contra la contaminación atmosférica
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="ground-contamination">
+            Medidas contra la contaminación terrestre
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="fauna-extinction">
+            Medidas contra la extinción de la fauna
+          </label>
+          <label>
+          <input 
+            type="checkbox" 
+            id="opinion-area" 
+            name="opinion-area" 
+            value="flora-extinction">
+            Medidas contra la extinción de la flora
+          </label>
+        </div>
+
+        <div id="form-group">
+          <p>Por favor, escribe tus sugerencias aquí*</p>
+          <textarea
+            id="comments"
+            placeholder="En mi opinión, nature-org podría mejorar en..."
+            required
+            rows="10">
+          </textarea>
+        </div>
+
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div id="pie">
+      <p>© nature-org - Todos los derechos reservados</p>
+    </div>
+  </body>
+</html>
