@@ -4,5 +4,11 @@ adaptativo (Responsive Web Design) en [freeCodeCamp](https://www.freecodecamp.or
 
 //-------------CABECERA-------------//
 
+![Screenshot](images/screenshot1.png)
+
+//-------------SECCIÓN FORMULARIO-------------//
+
+![Screenshot](images/screenshot2.png)
+
 
 
